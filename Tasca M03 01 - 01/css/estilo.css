@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+/*Toda la ventana grafica del navegador
+En esta primera grafica del ejercicio se aprecia que la distancia entre square-1 square-2 square-3 hacia el flex-container son todas iguales ademas entre los square(s), por lo que esta distancia será de 2vh*/
+div,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vh;
+}
+
+.flex-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/*Block One*/
+.square-1 {
+  height: 37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.square-g {
+  padding: 2vh 2vh;
+  background: black;
+}
+
+.square-11--div,
+.square-12--div {
+  height: calc((100% / 2) - 1vh);
+  width: 100%;
+  padding: 2vh 2vh;
+}
+.square-11--div {
+  background: rgb(53, 82, 109);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.inside-line-1--div,
+.inside-line-2--div,
+.inside-line-3--div {
+  height: 100%;
+  background: rgb(224, 88, 24);
+}
+
+
+.inside-line-1--div,
+.inside-line-3--div {
+  width: calc((100% - 4vh) / 5);
+}
+
+.inside-line-2--div {
+  width: calc(((100% - 4vh) * 3) / 5);
+}
+
+.square-12--div {
+  background: orange;
+}
+
+.inside-line4--div {
+  height: 100%;
+  background: rgb(212, 199, 7);
+}
+
+/*====================
+Block Two
+======================*/
+.square-2 {
+  height: 43vh;
+  display: flex;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.square-13--div {
+  height: 100%;
+  width: calc(100% - 30%);
+  background: rgba(111, 105, 121, 0.883);
+  padding: 2vh 2vh;
+  margin-right: 1vh;
+  }
+  .square-13-1--div{
+    height: 100%;
+    width: 100%;
+    background:burlywood;
+     }
+
+  .square-14--div {
+  height: 100%;
+  width: calc(100% - 70%);
+  background: rgba(245, 132, 104, 0.924);
+  padding: 2vh 2vh;
+  margin-left: 1vh;;
+}
+
+.inside-line10--div{
+  height: 2vh;
+  width: 100%;
+  background:yellow;
+  margin-bottom:1vh;
+  }
+
+  .inside-line11--div{
+    height: 2vh;
+    width: 100%;
+    margin-top:1vh;
+    }
+    .square-13-1--div > div:first-child{
+      height:calc(((100% - 4vh) *2) / 3 + 2vh);
+      width: 100%;
+      margin-bottom: 1vh;
+      display:flex;
+      flex-direction: column;
+      justify-content:space-between;
+    }
+    .square-gen-div{
+      height:100%;
+      width: calc((100% - 2vh)/2);
+      background: blueviolet;
+    }
+
+    .square-2-div-1,
+    .square-2-div-2    {
+      width: 100%;
+      height:calc((100% - 50%) - 1vh ); 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+   
+    .square-13-2-div{
+      height:calc((100% - 4vh)/3);
+      width: 100%;
+      margin-top:2vh;
+      background:rgba(6, 168, 209, 0.726);
+    }
+
+/*====================
+Block Three
+======================*/
+.square-3 {
+  height: 15vh;
+  margin-top: 1vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vh 2vh;
+}
+.square-15--div {
+  height: 100%;
+  width: 100%;
+  background: rgba(209, 179, 8, 0.705);
+}

@@ -1,0 +1,397 @@
+/*Reseteamos todos los elementos*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style-type:none;
+  text-decoration: none;
+}
+
+/*Creamos variables de colores para los botones de redes sociales y de menu de navegacion*/
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+}
+
+/*Toda el ancho de la ventana grafica del navegador*/
+body {
+  width: 100vw;
+  padding: 2vh 2vh;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.192);
+  padding: 1vh 1vh;
+  background-color: beige;
+}
+
+/*Block One*/
+.square-1 {
+  background-image: url("../image/Fondo-Cabecera.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+div.square-11--div,
+div.square-12--div {
+  width: 100%;
+  padding: 1vh 1vh;
+  height: 50%;
+}
+div.square-11--div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-nav-despl {
+
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+.menu-nav-head ul li a{
+  font-size:2vh;
+}
+
+
+.menu-nav-head ul li a span{
+  font-size: 1.5vh;
+  padding-right: 1.2vh;
+}
+
+
+
+.logo-head {
+  width: 10%;
+  height: 50%;
+}
+.logo-head img {
+  height: 100%;
+  width: 100%;
+}
+
+.square-12--div {
+  background: rgb(231, 231, 230);
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  color: tomato;
+}
+
+.inside-line4--div {
+  font-family: 'Prata', serif;
+  font-size: 3vh;
+  font-weight: 700;
+}
+.redes-sociales-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.redes-sociales-head a {
+  display: block;
+  background: #333;
+  color: #fff;
+  width: 30px;
+  margin: 1% 1%;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px 0px rgb(253, 207, 207);
+}
+
+.redes-sociales-head:hover a {
+  filter: blur(2px);
+}
+
+.redes-sociales-head a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+.redes-sociales-head .facebook:hover {
+  background: var(--facebook);
+}
+
+.redes-sociales-head .instagram:hover {
+  background: var(--instagram);
+}
+
+.comillas{
+ font-size: 200%;
+}
+
+
+/******************************************
+====================Block Two===============
+*********************************************/
+.section {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  background: rgb(233, 232, 232);
+  display: flex;
+  width: 100%;
+  padding:.6vh .6vh;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:calc((100% / 3) * 2);
+  padding:.2vh .2vh;
+}
+
+.article {
+  background: rgb(221, 218, 218);
+  border: 1px solid brown;
+  font-family: "Lato", sans-serif;
+  width: calc(100% - 50% - 1vh);
+  margin: 0.5vh;
+  font-size:12px;
+  position: relative;
+}
+
+.imagen-texto {
+  height: 77%;
+  width: 100%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.imagen-news-h2 {
+  width:100%;
+  background-color: brown;
+  color: white;
+}
+
+.aside {
+  padding:.2vh .2vh;
+  width:calc(100% / 3);
+}
+
+.publicidad {
+  background: rgba(156, 8, 8, 0.555);
+  margin: 0.5vh;
+  text-align: center;
+  padding: .5vh;
+}
+.navegacion {
+  background: red;
+  margin-top: 1vh;
+  padding:.2vh .2vh;
+  width:calc(100% - 1vh);
+  text-align: center;
+}
+
+.info p.read-more {
+  position:absolute;
+  text-align: left;
+  bottom: 0;
+}
+
+
+.imagen-texto {
+  position: relative;
+}
+.date-img {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+.article p,.article h2{
+  padding:.5vh;
+}
+
+p.texto-article-hidden{
+  padding-bottom:0;
+}
+
+/*====================
+Block Three
+======================*/
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vh 2vh;
+  background: beige;
+  text-align: center;
+}
+.square-15--div {
+  height: 100%;
+  width: 100%;
+  background: rgba(209, 179, 8, 0.705);
+}
+
+/***********************************************
+*******************MEDIA QUERYS*****************
+************************************************/
+
+@media all and (max-width: 1500px){
+  p.texto-article-hidden{
+    visibility:hidden;
+  }
+
+  p.texto-article-hidden::before{
+    content:"Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet. .... "  ;
+    visibility: visible;  
+  }
+ 
+}
+
+@media all and (max-width: 1200px){
+  .articulos{
+    flex-direction: column;
+   }
+  .article{
+   width:calc(100% - 1vh);
+  }
+  
+  p.texto-article-hidden::before{
+    content:"Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet. .... "  ;
+    visibility: visible;  
+  }
+}
+
+@media all and ( max-width: 800px) {
+  .section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .articulos {
+    width: 100%;
+    margin: 0;
+  }
+  .aside {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .publicidad {
+    margin: 1vh;
+    width: 100%;
+    height: 40%;
+  }
+
+  .square-11--div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .inside-line4--div {
+    font-size: 2vh;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .section-div-1,
+  .section-div-2 {
+    flex-direction: column;
+    height: 50%;
+  }
+
+  /*.square-13-1--div > div:first-child div {
+    width: 100%;
+  }
+  .square-13-1--div > div:first-child {
+    height: calc(((100% - 8vh) * 4 / 5) + 8vh);
+    margin: 0;
+  }
+  div.section-div-1 div,
+  div.section-div-2 div {
+    height: 100%;
+  }
+
+  div.section-div-1,
+  div.section-div-2 {
+    padding-bottom: 2vh;
+  }
+
+  .square-13-2-div {
+    height: calc((100% - 8vh) / 5);
+    margin: 0;
+  }*/
+
+  .inside-line4--div {
+    font-size: 2vh;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .aside {
+    flex-direction: column;
+  }
+}
+
+
+.redes-sociales-blq {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*************************************************
+===========Efecto del menu de navegacion==========
+**************************************************/
+.menu-nav-head ul li {
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.menu-nav-head ul li a {
+  color: black;
+  font-family: Roboto, "sans-serif";
+}
+
+.menu-nav-head ul li::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: yellowgreen;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: 0.4s ease-out;
+}
+
+.menu-nav-head ul li:hover::before {
+  width: 100%;
+}
+
+.menu-nav-head ul {
+  padding-top: 20px;
+  text-align: center;
+}
+
+logo-head.img {
+  height: 100%;
+}
+
+.redes-sociales-head {
+  padding: 10px 10px;
+}
+
+.menu-nav-img {
+  width: 20px;
+  height: 20px;
+}
