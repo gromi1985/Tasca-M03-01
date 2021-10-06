@@ -18,7 +18,7 @@ body {
   display: grid;
   row-gap: .5em;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8% 20% auto auto;
+  grid-template-rows: 8% 40% auto auto;
 }
 .grid-container > .contain,
 .grid-container > .sidebar,
@@ -38,8 +38,12 @@ body {
 .grid-container .header-2 {
   background: url(../image/Fondo-Cabecera.jpg);
   background-size: 100% 100%;
-}
+  }
 
+  .comillas{
+    font-size: 200%;
+   }
+   
 /*Articulos y Sidebar*/
 .grid-container > .contain {
   background: #eee;
